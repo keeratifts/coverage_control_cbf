@@ -1,4 +1,4 @@
-# Adaptive coverage control with control barrier function
+# Adaptive coverage control with CBF
 
 ## Requirements
 
