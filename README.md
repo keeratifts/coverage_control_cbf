@@ -54,3 +54,11 @@ For non-uniform coverage control
 ```sh
 rosrun coverage_control_cbf main_non_uniform.py
 ```
+
+For non-uniform coverage control with real robots
+
+![safe_real](https://user-images.githubusercontent.com/76491592/200639487-cca367aa-c869-4698-bc6c-52df862aad87.gif)
+
+```sh
+rosrun coverage_control_cbf main_real.py
+```
