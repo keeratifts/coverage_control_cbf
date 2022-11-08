@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+  
+  <!-- BEGIN ROBOT 1-->
+  <group ns="raspi_0">
+    <param name="tf_prefix" value="raspi_0_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x -2 -y -2 -z 0" />
+      <arg name="robot_namespace" value="raspi_0" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 2-->
+  <group ns="raspi_1">
+    <param name="tf_prefix" value="raspi_1_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 0 -y -2 -z 0" />
+      <arg name="robot_namespace" value="raspi_1" />
+    </include>
+  </group>
+  
+  <!-- BEGIN ROBOT 3-->
+  <group ns="raspi_2">
+    <param name="tf_prefix" value="raspi_2_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 2 -y -2 -z 0" />
+      <arg name="robot_namespace" value="raspi_2" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 4-->
+  <group ns="raspi_3">
+    <param name="tf_prefix" value="raspi_3_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x -2 -y 0 -z 0" />
+      <arg name="robot_namespace" value="raspi_3" />
+    </include>
+  </group>
+  
+    <!-- BEGIN ROBOT 5-->
+  <group ns="raspi_4">
+    <param name="tf_prefix" value="raspi_4_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 0 -y 0 -z 0" />
+      <arg name="robot_namespace" value="raspi_4" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 6-->
+  <group ns="raspi_5">
+    <param name="tf_prefix" value="raspi_5_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 2 -y 0 -z 0" />
+      <arg name="robot_namespace" value="raspi_5" />
+    </include>
+  </group>
+  
+  <!-- BEGIN ROBOT 7-->
+  <group ns="raspi_6">
+    <param name="tf_prefix" value="raspi_6_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x -2 -y 2 -z 0" />
+      <arg name="robot_namespace" value="raspi_6" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 8-->
+  <group ns="raspi_7">
+    <param name="tf_prefix" value="raspi_7_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 0 -y 2 -z 0" />
+      <arg name="robot_namespace" value="raspi_7" />
+    </include>
+  </group>
+  
+    <!-- BEGIN ROBOT 9-->
+  <group ns="raspi_8">
+    <param name="tf_prefix" value="raspi_8_tf" />
+    <include file="$(find raspimouse_gazebo)/launch/one_robot_laser.launch" >
+      <arg name="init_pose" value="-x 2 -y 2 -z 0" />
+      <arg name="robot_namespace" value="raspi_8" />
+    </include>
+  </group>
+</launch>
